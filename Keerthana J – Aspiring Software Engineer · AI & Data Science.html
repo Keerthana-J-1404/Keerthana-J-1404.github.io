@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Keerthana J – Aspiring Software Engineer · AI & Data Science</title>
+<meta name="description" content="Portfolio of Keerthana J, a CSE (Data Science) student in Bengaluru building full-stack AI projects such as InterviewAI, and president of Revonix Tech Club.">
+<meta property="og:title" content="Keerthana J – Software Engineer in the making">
+<meta property="og:description" content="Full-stack and AI projects, engineering decisions, and community leadership.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f6f3;--surf:#fff;--ink:#1c1f24;--mute:#5c626b;--line:#dcdcd6;--acc:#2b50e6;--accink:#fff;--soft:#e9edfd;
+--disp:"Bricolage Grotesque","Segoe UI",system-ui,sans-serif;--body:"Instrument Sans","Segoe UI",system-ui,sans-serif;--mono:ui-monospace,Consolas,monospace;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#14161a;--surf:#1b1e23;--ink:#e8e9ec;--mute:#9aa1ab;--line:#2c3037;--acc:#8ea2ff;--accink:#10131a;--soft:#222842;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#14161a;--surf:#1b1e23;--ink:#e8e9ec;--mute:#9aa1ab;--line:#2c3037;--acc:#8ea2ff;--accink:#10131a;--soft:#222842;color-scheme:dark}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(72px + env(safe-area-inset-top,0px))}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.65 var(--body);-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:30}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--acc);outline-offset:3px;border-radius:4px}
+.skip{position:absolute;left:-999px;top:8px;background:var(--acc);color:var(--accink);padding:8px 14px;z-index:50;border-radius:6px}
+.skip:focus{left:8px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:60px}
+.logo{font:700 20px var(--disp);text-decoration:none}
+nav ul{display:flex;gap:22px;list-style:none;margin:0;padding:0}
+nav a{text-decoration:none;font-size:15px;color:var(--mute)}
+nav a:hover{color:var(--ink)}
+.tbtn{border:1px solid var(--line);background:var(--surf);color:var(--ink);border-radius:999px;padding:7px 14px;font:500 14px var(--body);cursor:pointer}
+.tbtn:hover{border-color:var(--acc)}
+section{padding:88px 0;border-top:1px solid var(--line)}
+section:first-of-type{border-top:0}
+h1,h2,h3{font-family:var(--disp);line-height:1.08;margin:0;letter-spacing:-.02em}
+h2{font-size:clamp(30px,5vw,44px);margin-bottom:12px}
+h3{font-size:22px;letter-spacing:-.01em}
+.lead{color:var(--mute);max-width:62ch;margin:0 0 40px}
+p{margin:0 0 14px;max-width:68ch}
+.hero{padding:96px 0 80px;position:relative;overflow:hidden}
+h1{font-size:clamp(52px,12vw,128px);font-weight:700;letter-spacing:-.045em;line-height:.92}
+.role{font:500 clamp(19px,3vw,26px)/1.35 var(--disp);margin:26px 0 12px;max-width:30ch}
+.intro{color:var(--mute);max-width:52ch}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.btn{display:inline-block;text-decoration:none;font-weight:600;padding:12px 22px;border-radius:8px;border:1.5px solid var(--ink)}
+.btn.pri{background:var(--acc);border-color:var(--acc);color:var(--accink)}
+.btn:hover{transform:translateY(-1px)}
+.net{position:absolute;right:-30px;top:40px;width:min(46vw,420px);opacity:.9;pointer-events:none}
+.net line{stroke:var(--line);stroke-width:1.5}.net circle{fill:var(--bg);stroke:var(--ink);stroke-width:1.5}.net .a{fill:var(--acc);stroke:var(--acc)}
+.pulse{animation:pl 2.6s ease-in-out infinite;transform-origin:center;transform-box:fill-box}
+@keyframes pl{50%{transform:scale(1.5);opacity:.5}}
+.grid{display:grid;gap:20px}.g2{grid-template-columns:repeat(2,1fr)}.g3{grid-template-columns:repeat(3,1fr)}
+.card{background:var(--surf);border:1px solid var(--line);border-radius:10px;padding:24px}
+.stack-row{display:grid;grid-template-columns:170px 1fr;gap:20px;padding:18px 0;border-top:1px solid var(--line)}
+.stack-row:last-child{border-bottom:1px solid var(--line)}
+.stack-row h3{font-size:18px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{border:1px solid var(--line);background:var(--surf);border-radius:6px;padding:4px 11px;font-size:15px}
+.chip.b{border-color:var(--acc);background:var(--soft)}
+.key{font-size:14px;color:var(--mute);margin:-24px 0 28px}
+.tag{display:inline-block;font:600 13px var(--body);padding:2px 10px;border-radius:999px;border:1px solid var(--line);color:var(--mute);white-space:nowrap}
+.tag.ok{border-color:var(--acc);color:var(--acc)}
+.tag.wip{border-style:dashed}
+.feat{border-top:2px solid var(--ink)}
+.feat .top{display:flex;justify-content:space-between;gap:12px;align-items:baseline;flex-wrap:wrap}
+.feat .stk{font:14px var(--mono);color:var(--mute);margin:14px 0}
+.links{display:flex;gap:18px;flex-wrap:wrap;margin-top:16px}
+.links a{font-weight:600;text-decoration-color:var(--acc);text-underline-offset:4px;text-decoration-thickness:2px}
+.ph{border-style:dashed;color:var(--mute);background:transparent}
+ul.plain{list-style:none;padding:0;margin:0}
+ul.feats li{display:flex;justify-content:space-between;gap:12px;padding:10px 0;border-bottom:1px solid var(--line)}
+.diag{background:var(--surf);border:1px solid var(--line);border-radius:10px;padding:12px;overflow-x:auto}
+.diag svg{min-width:560px;width:100%;height:auto;display:block}
+.diag rect{fill:var(--bg);stroke:var(--ink);stroke-width:1.5}.diag rect.a{fill:var(--soft);stroke:var(--acc)}
+.diag text{fill:var(--ink);font:500 13px var(--body)}.diag text.s{fill:var(--mute);font-size:11px}
+.diag path{stroke:var(--mute);stroke-width:1.5;fill:none;marker-end:url(#ar)}.diag marker path{fill:var(--mute);stroke:none;marker-end:none}
+.dec{margin-top:36px}.dec h3{margin-bottom:6px;font-size:19px}.dec p{color:var(--mute);margin:0}
+.tl{border-left:2px solid var(--line);padding-left:24px;margin:0 0 0 4px}
+.tl>div{position:relative;margin-bottom:30px}
+.tl>div::before{content:"";position:absolute;left:-31px;top:9px;width:12px;height:12px;border-radius:50%;background:var(--acc)}
+.small{font-size:14px;color:var(--mute)}
+.contact a.big{overflow-wrap:anywhere;font:700 clamp(20px,4.4vw,38px) var(--disp);letter-spacing:-.02em;display:block;margin:6px 0;text-decoration-color:var(--acc);text-underline-offset:6px;text-decoration-thickness:3px}
+footer{border-top:1px solid var(--line);padding:30px 0 40px;font-size:15px;color:var(--mute)}
+footer .wrap{display:flex;flex-wrap:wrap;gap:16px 28px;justify-content:space-between}
+footer ul{display:flex;gap:18px;list-style:none;margin:0;padding:0;flex-wrap:wrap}
+@media(max-width:820px){nav{display:none}.g2,.g3{grid-template-columns:1fr}.stack-row{grid-template-columns:1fr;gap:10px}section{padding:64px 0}.net{opacity:.35;top:20px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header><div class="wrap bar">
+<a class="logo" href="#top" aria-label="Keerthana J, home">Keerthana J</a>
+<nav aria-label="Primary"><ul id="nav"></ul></nav>
+<button class="tbtn" id="theme" type="button" aria-pressed="false">Dark mode</button>
+</div></header>
+<main id="main">
+<section class="hero" id="top"><div class="wrap">
+<svg class="net" viewBox="0 0 400 300" aria-hidden="true"><line x1="60" y1="60" x2="190" y2="130"/><line x1="190" y1="130" x2="340" y2="70"/><line x1="190" y1="130" x2="150" y2="250"/><line x1="150" y1="250" x2="320" y2="220"/><line x1="340" y1="70" x2="320" y2="220"/><circle cx="60" cy="60" r="9"/><circle cx="340" cy="70" r="9"/><circle cx="150" cy="250" r="9"/><circle cx="320" cy="220" r="9"/><circle class="a" cx="190" cy="130" r="14"/><circle class="a pulse" cx="190" cy="130" r="6"/></svg>
+<h1 id="h-name"></h1>
+<p class="role" id="h-role"></p>
+<p class="intro" id="h-intro"></p>
+<div class="btns"><a class="btn pri" href="#projects">View projects</a><a class="btn" href="#contact">Contact me</a></div>
+</div></section>
+<section id="about"><div class="wrap"><h2>About</h2><div class="grid g2" id="about-body"></div></div></section>
+<section id="stack"><div class="wrap"><h2>Tech stack</h2><p class="lead">Grouped by how I’ve actually used each tool. Highlighted means I’ve built something real with it; the rest I’m still learning.</p><div id="stack-body"></div></div></section>
+<section id="projects"><div class="wrap"><h2>Projects</h2><p class="lead">One project in active development and one in planning, each with its real status.</p><div class="grid" id="proj-body"></div></div></section>
+<section id="case"><div class="wrap"><h2>InterviewAI case study</h2><div id="case-body"></div></div></section>
+<section id="leadership"><div class="wrap"><h2>Experience and leadership</h2><div id="lead-body"></div></div></section>
+<section id="learning"><div class="wrap"><h2>Learning journey</h2><p class="lead">What I’m working on right now.</p><div class="grid g3" id="learn-body"></div></div></section>
+<section id="contact" class="contact"><div class="wrap"><h2>Contact</h2><p class="lead" id="c-text"></p><div id="c-links"></div></div></section>
+</main>
+<footer><div class="wrap"><span id="f-copy"></span><ul id="f-links"></ul></div></footer>
+
+<script>
+/* ===== EDIT YOUR CONTENT HERE ===== */
+const DATA={
+name:"Keerthana J",
+role:"Aspiring software engineer building AI and data products",
+intro:"CSE (Data Science) student in Bengaluru. I build full-stack projects end to end, and I’m working on the depth to design systems, not just assemble them.",
+email:"keerthana.jayakumar.kjk@gmail.com",
+github:"https://github.com/Keerthana-J-1404",
+linkedin:"https://www.linkedin.com/in/keerthana-j-18359a354",
+about:[
+"I’m a Computer Science Engineering student specializing in Data Science at Akash Institute of Engineering & Technology, Bengaluru. My interests are software engineering, AI, data science and full-stack development.",
+"I want to be an engineer who can understand a problem, design the system, write the code and ship something useful, rather than collect certificates or copy tutorials. Right now I’m building up my DSA, backend, database and AI-integration skills through real projects."],
+principles:[["Build to learn","Each project is a way to learn a layer properly: auth, data, APIs, AI integration."],["Be honest about status","I label what works and what doesn’t. Nothing here is padded."],["Understand before shipping","When something breaks, I trace the cause before reaching for a fix."]],
+stack:[
+["Languages",[["Python",1],["C",0]]],
+["Frontend",[["React",1],["JavaScript",1],["HTML",1],["CSS",1]]],
+["Backend",[["FastAPI",1],["REST APIs",1],["Node.js",0]]],
+["Databases",[["PostgreSQL",1],["SQL",1],["Neon",1]]],
+["Tools and platforms",[["Git",1],["GitHub",1],["VS Code",1],["Firebase",1],["Vercel",0],["Render",0]]],
+["AI and data",[["Gemini API",1],["AI application development",1],["Python for data science",0],["Excel",0]]]],
+projects:[{
+title:"InterviewAI",status:"In development",
+blurb:"An AI mock interview platform for students: upload a resume, get tailored questions, practise in text, then in a live camera-and-microphone interview.",
+stack:"React · FastAPI · PostgreSQL (Neon) · Firebase Auth · Gemini API · PyMuPDF",
+links:[["Source on GitHub","https://github.com/Keerthana-J-1404/InterviewAI"]],demo:"Not deployed yet. Runs locally."}],
+planned:[{title:"Campus Wi-Fi Heatmap and Congestion Predictor",status:"Planned",blurb:"Wi-Fi quality varies a lot across campus and through the day, and students can’t tell where or when it will be bad. This project will predict download speed, signal strength and congestion level (low, medium or high) for a chosen location and time, and show the results on a color-coded campus heatmap.",stack:"Machine learning (Random Forest) · structured database · web application",meta:"College project, built solo. Planned method: collect measurements around campus, train and evaluate models with accuracy, F1-score, MAE, RMSE and R². Department of CSE (Data Science), AIET, VTU. Currently in planning."}],
+feats:[["Google sign-in with Firebase Authentication","Working"],["Firebase to Neon user sync","Working"],["Resume PDF upload and parsing","Working"],["Gemini resume analysis and question generation","Working"],["Text-based mock interview","Working"],["Live interview: camera, microphone, speech recognition","In progress"],["Interview history API","Working"],["Interview history page","Planned"],["Post-interview performance analysis","Planned"]],
+problem:"Students often practise interviews with no feedback, or with generic question lists unrelated to their own resume. InterviewAI aims to give role-aware practice and specific, comparable feedback after each attempt.",
+decisions:[["Firebase handles identity; the backend owns the data","The React app signs users in with Google through Firebase. The FastAPI backend verifies the Firebase ID token and then creates or finds the matching user in PostgreSQL, so I didn’t build password handling myself."],["The Gemini key stays on the server","All Gemini calls go through FastAPI. The browser never sees the API key, and prompts live in one place where I can change them."],["Resume parsing happens server-side","PyMuPDF extracts text from the uploaded PDF. The extracted text feeds Gemini for resume analysis and for generating questions."],["The live interview uses a simple session flow","The frontend captures camera, microphone and speech recognition, and talks to the backend through start, respond and finalize endpoints."]],
+challenges:[["Firebase blocked sign-in on localhost","The console UI failed to update authorized domains, so I added localhost through the Identity Platform REST API directly."],["Library compatibility","Some dependencies didn’t work on Python 3.14, so the backend runs on Python 3.12."],["Live interview reliability","Speech recognition and transcript capture are still unreliable at times. This is the main thing I’m fixing."]],
+future:"Interview history page, a full post-interview analysis that combines resume, answers and live transcript, comparison with previous attempts, and a deployed demo.",
+lead:{role:"President, Revonix Tech Club",org:"Akash Institute of Engineering & Technology",text:"I founded Revonix as a place for practical, project-based learning and collaboration. The club covers web and app development, AI, robotics and automation, software development, and design and media. I’m interested in running workshops, helping members collaborate on GitHub, and planning technical events.",more:["Add event or workshop details here once you have them.","Add member counts or outcomes only when they’re verified."]},
+learning:[["Backend and APIs","Making the InterviewAI backend reliable and well structured."],["DSA","Building problem-solving fundamentals alongside projects."],["AI integration","Prompt design, structured outputs and evaluating model responses."]],
+};
+/* ===== RENDER ===== */
+const $=id=>document.getElementById(id);
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const tag=s=>`<span class="tag ${s==="Working"?"ok":s==="In progress"||s==="In development"?"wip":""}">${esc(s)}</span>`;
+const nav=[["about","About"],["stack","Stack"],["projects","Projects"],["case","Case study"],["leadership","Leadership"],["contact","Contact"]];
+$("nav").innerHTML=nav.map(n=>`<li><a href="#${n[0]}">${n[1]}</a></li>`).join("");
+$("h-name").textContent=DATA.name;$("h-role").textContent=DATA.role;$("h-intro").textContent=DATA.intro;
+$("about-body").innerHTML=`<div>${DATA.about.map(p=>`<p>${esc(p)}</p>`).join("")}</div><div>${DATA.principles.map(p=>`<div style="margin-bottom:18px"><h3 style="font-size:18px">${esc(p[0])}</h3><p class="small" style="margin:4px 0 0">${esc(p[1])}</p></div>`).join("")}</div>`;
+$("stack-body").innerHTML=`<p class="key">Highlighted: used in a project. Plain: fundamentals or learning.</p>`+DATA.stack.map(g=>`<div class="stack-row"><h3>${esc(g[0])}</h3><div class="chips">${g[1].map(s=>`<span class="chip${s[1]?" b":""}">${esc(s[0])}</span>`).join("")}</div></div>`).join("");
+const P=DATA.projects[0];
+$("proj-body").innerHTML=`<article class="card feat"><div class="top"><h3 style="font-size:30px">${esc(P.title)}</h3>${tag(P.status)}</div><p style="margin-top:12px">${esc(P.blurb)}</p><div class="stk">${esc(P.stack)}</div><p class="small">Live demo: ${esc(P.demo)}</p><div class="links">${P.links.map(l=>`<a href="${l[1]}" target="_blank" rel="noopener">${esc(l[0])}</a>`).join("")}<a href="#case">Read the case study</a></div></article>${DATA.planned.map(p=>`<article class="card"><div style="display:flex;justify-content:space-between;gap:12px;align-items:baseline;flex-wrap:wrap"><h3>${esc(p.title)}</h3>${tag(p.status)}</div><p style="margin-top:12px">${esc(p.blurb)}</p><div style="font:14px var(--mono);color:var(--mute);margin:12px 0">${esc(p.stack)}</div><p class="small" style="margin:0">${esc(p.meta)}</p></article>`).join("")}`;
+$("case-body").innerHTML=`<p class="lead" style="margin-bottom:28px">${esc(DATA.problem)}</p>
+<div class="diag"><svg viewBox="0 0 640 300" role="img" aria-label="Architecture: React app signs in with Firebase, calls FastAPI with an ID token; FastAPI uses Neon PostgreSQL, PyMuPDF and the Gemini API."><defs><marker id="ar" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8z"/></marker></defs>
+<rect class="a" x="20" y="110" width="140" height="64" rx="8"/><text x="90" y="138" text-anchor="middle">React app</text><text class="s" x="90" y="157" text-anchor="middle">camera, mic, UI</text>
+<rect x="20" y="224" width="140" height="56" rx="8"/><text x="90" y="248" text-anchor="middle">Firebase Auth</text><text class="s" x="90" y="264" text-anchor="middle">Google sign-in</text>
+<rect class="a" x="250" y="110" width="140" height="64" rx="8"/><text x="320" y="138" text-anchor="middle">FastAPI</text><text class="s" x="320" y="157" text-anchor="middle">verifies ID token</text>
+<rect x="480" y="20" width="140" height="56" rx="8"/><text x="550" y="44" text-anchor="middle">Neon PostgreSQL</text><text class="s" x="550" y="60" text-anchor="middle">via SQLAlchemy</text>
+<rect x="480" y="122" width="140" height="56" rx="8"/><text x="550" y="146" text-anchor="middle">Gemini API</text><text class="s" x="550" y="162" text-anchor="middle">questions, analysis</text>
+<rect x="480" y="224" width="140" height="56" rx="8"/><text x="550" y="248" text-anchor="middle">PyMuPDF</text><text class="s" x="550" y="264" text-anchor="middle">resume text</text>
+<path d="M90 224 V176"/><path d="M162 142 H248"/><path d="M392 130 L478 60"/><path d="M392 142 H478"/><path d="M392 154 L478 240"/></svg></div>
+<p class="small" style="margin-top:10px">Frontend and backend currently run locally. Vercel and Render are the planned hosts.</p>
+<div class="grid g2" style="margin-top:44px"><div><h3 style="margin-bottom:10px">Feature status</h3><ul class="plain feats">${DATA.feats.map(f=>`<li><span>${esc(f[0])}</span>${tag(f[1])}</li>`).join("")}</ul></div>
+<div><h3 style="margin-bottom:10px">Engineering decisions</h3>${DATA.decisions.map(d=>`<div class="dec" style="margin-top:0;margin-bottom:20px"><h3>${esc(d[0])}</h3><p>${esc(d[1])}</p></div>`).join("")}</div></div>
+<div class="dec"><h3 style="font-size:24px;margin-bottom:14px">Challenges so far</h3><div class="grid g3">${DATA.challenges.map(c=>`<div class="card"><h3 style="font-size:17px;margin-bottom:8px">${esc(c[0])}</h3><p class="small" style="margin:0">${esc(c[1])}</p></div>`).join("")}</div></div>
+<div class="dec"><h3 style="font-size:24px">What’s next</h3><p>${esc(DATA.future)}</p></div>`;
+const L=DATA.lead;
+$("lead-body").innerHTML=`<div class="tl"><div><h3>${esc(L.role)}</h3><p class="small" style="margin:2px 0 12px">${esc(L.org)}</p><p>${esc(L.text)}</p></div></div>`;
+$("learn-body").innerHTML=DATA.learning.map(l=>`<div class="card"><h3 style="font-size:18px;margin-bottom:8px">${esc(l[0])}</h3><p class="small" style="margin:0">${esc(l[1])}</p></div>`).join("");
+$("c-text").textContent="I’m looking for internships and projects where I can build real software and learn from experienced engineers. The fastest way to reach me is below.";
+const mail=DATA.email?`<a class="big" href="mailto:${esc(DATA.email)}">${esc(DATA.email)}</a>`:"";
+$("c-links").innerHTML=mail+`<a class="big" href="${DATA.linkedin}" target="_blank" rel="noopener">LinkedIn</a><a class="big" href="${DATA.github}" target="_blank" rel="noopener">GitHub</a>`;
+$("f-copy").textContent=`© ${new Date().getFullYear()} ${DATA.name}`;
+$("f-links").innerHTML=`<li><a href="#projects">Projects</a></li><li><a href="${DATA.github}" target="_blank" rel="noopener">GitHub</a></li><li><a href="${DATA.linkedin}" target="_blank" rel="noopener">LinkedIn</a></li>`;
+/* ===== THEME ===== */
+const root=document.documentElement,tb=$("theme");
+function setTheme(t,save){root.setAttribute("data-theme",t);tb.textContent=t==="dark"?"Light mode":"Dark mode";tb.setAttribute("aria-pressed",t==="dark");if(save){try{localStorage.setItem("theme",t)}catch(e){}}}
+let saved=null;try{saved=localStorage.getItem("theme")}catch(e){}
+setTheme(saved==="dark"?"dark":"light",false);
+tb.addEventListener("click",()=>setTheme(root.getAttribute("data-theme")==="dark"?"light":"dark",true));
+</script>
+</body>
+</html>
